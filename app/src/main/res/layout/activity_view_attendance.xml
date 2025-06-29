@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/txtAttendanceTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Attendance Summary"
+        android:textSize="22sp"
+        android:textStyle="bold"/>
+
+    <!-- Filter Options -->
+    <Spinner
+        android:id="@+id/spinnerFilterClass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/filter_by_class"
+        />
+
+    <Button
+        android:id="@+id/btnPickDateFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Filter by Date"/>
+
+    <ListView
+        android:id="@+id/listAttendanceRecords"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- Export Options -->
+    <Button
+        android:id="@+id/btnExportCSV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Export as CSV"/>
+
+    <Button
+        android:id="@+id/btnExportPDF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Export as PDF"/>
+
+    <!-- Exit Button -->
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exit App"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:textColor="@android:color/white"/>
+</LinearLayout>

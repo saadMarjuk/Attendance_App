@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dashboardLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/txtWelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome!"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="16dp"/>
+
+    <!-- Student Section -->
+    <LinearLayout
+        android:id="@+id/studentDashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btnViewAttendance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Attendance" />
+    </LinearLayout>
+
+    <!-- Teacher Section -->
+    <LinearLayout
+        android:id="@+id/teacherDashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btnClassList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Class List > Take Attendance" />
+
+        <Button
+            android:id="@+id/btnStudentList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Student List" />
+
+        <Button
+            android:id="@+id/btnCreateClass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create Class / Schedule" />
+
+        <Button
+            android:id="@+id/btnViewAttendance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Attendance" />
+    </LinearLayout>
+
+    <!-- Exit Button -->
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exit"
+        android:layout_marginTop="24dp"
+        android:background="@android:color/holo_red_light" />
+</LinearLayout>
